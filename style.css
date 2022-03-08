@@ -1,0 +1,31 @@
+.calculator {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "display display display display display"
+  "number number number . operation"
+}
+
+.display{
+  grid-area: display;
+  min-height: 50px;
+}
+
+.numbers {
+  grid-area: number;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.operators {
+  grid-area: operation;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.operators button{
+  margin-bottom: 10px;
+  padding: 5px;
+}
